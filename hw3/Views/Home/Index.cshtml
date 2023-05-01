@@ -4,15 +4,15 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-
-    <form method="post">
-        <input type="email" name="email" id="email" placeholder="E-mail" asp-for="Email" />
-        <input type="text" name="name" id="name" placeholder="Your name" asp-for="Name" />
-        <button>Send</button>
-    </form>
-
-
-    @*<h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+<div class="container">
+	<div class="main">
+        <div class="submit-form">
+            <form method="post">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" id="email" placeholder="E-mail" asp-for="Email">
+                <input type="text" name="name" id="name" placeholder="Ваше имя" onkeypress="validate(event);" asp-for="Name">
+                <button>Стать разработчиком</button>
+            </form>
+        </div>
+	</div>
 </div>
